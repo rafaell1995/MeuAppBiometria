@@ -21,14 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     reactNativeDelegate = delegate
     reactNativeFactory = factory
 
-    window = UIWindow(frame: UIScreen.main.bounds)
-
-    factory.startReactNative(
-      withModuleName: "MeuAppBiometria",
-      in: window,
-      launchOptions: launchOptions
-    )
-
+    // NÃO criar a window aqui. O SceneDelegate fará isso.
     return true
   }
 }
